@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+	title Directory listing for /public
+	body
+	h1 Directory listing for /public
+	hr
+	ul
+		each file in files
+			li 
+				a(href=`${file}`) #{file}
+		else
+			li There are no files!
+	hr
